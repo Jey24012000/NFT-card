@@ -1,0 +1,131 @@
+:root{
+
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --main-bg: hsl(217, 54%, 11%);
+    --card-bg: hsl(216, 50%, 16%);
+    --line:hsl(215, 32%, 27%);
+    --white:hsl(0, 0%, 100%);
+    
+
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+.main-container{
+    width: auto;
+    min-width: 320px;
+    padding: 20px;
+    padding-top: 50px;
+    min-width: 320px;
+    height: 700px;
+    background-color: var(--main-bg);
+    
+}
+.main-container--section{
+    width: 100%;
+    max-width: 375px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: var(--card-bg);
+    border-radius: 20px;
+    font-family: 'Outfit', sans-serif;
+}
+.section--img{
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+
+.section--info{
+    margin: 10px;
+}
+.info-title{
+    font-size: 2.4rem;
+    font-weight: 500;
+    color: var(--white);
+
+}
+.info-title:hover{
+    color: var(--cyan);
+}
+.info-sentence{
+    margin-top: 10px;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 2.4rem;
+    color: var(--soft-blue);
+}
+.section--price-status{
+    width: 100%;
+    height: auto;
+    border-bottom: 0.1rem solid var(--line) ;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+.price-status-eth{
+    padding: 10px;
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: var(--cyan);
+}
+.price-status-eth span{
+    display: inline-block;
+    width: 11px;
+    height: 18px;
+    margin-right: 5px;
+    background-image: url('../images/icon-ethereum.svg');
+    vertical-align: text-bottom;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.price-status-ago{
+    padding: 10px;
+    font-weight: 300;
+    font-size: 1.6rem;
+    color: var(--soft-blue);
+}
+.price-status-ago span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    background-image: url('../images/icon-clock.svg');
+    vertical-align: text-bottom;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.section--profile{
+    margin-top: 10px;
+    display: flex;
+}
+.profile-img{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+    background-image: url('../images/image-avatar.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.profile-creation{
+    padding: 6px 0;
+    color: var(--soft-blue);
+    font-size: 1.4rem;
+}
+.profile-creation .profile-creation--name{
+    color: var(--white);
+}
+.profile-creation .profile-creation--name:hover{
+    color: var(--cyan);
+}
